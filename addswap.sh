@@ -11,4 +11,3 @@ fi
 
 echo "/swap none swap sw 0 0" >> /etc/fstab
 echo "done creating swapfile "
-end

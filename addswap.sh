@@ -10,6 +10,6 @@ if [ ! -w "$file" ] ; then
     echo cannot write to $file
 fi
 echo "vm.swappiness = 10" | tee -a /etc/sysctl.conf
-echo "vm.vfs_pressure_cache = 50" tee -a /etc/sysctl.conf
+echo "vm.vfs_cache_pressure = 50" tee -a /etc/sysctl.conf
 sysctl -p
 sysctl -a
